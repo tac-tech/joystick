@@ -14,7 +14,11 @@ pip install pyusb
 ```
 sudo cp 50-chengong-joystick-udev.rules /etc/udev/rules.d/
 ```
-3. Run the python file
+3. Apply the udev rules
+```
+sudo /etc/init.d/udev restart
+```
+4. Run the python file
 ```
 python joystick_test.py
 ```
